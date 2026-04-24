@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Entra 21</title>
+    </head>
+    <body>
+        <form action="enviar.php" method="post">
+            <div>
+                <label for="nome_completo">Nome Completo:</label>
+                <input type="text" name="nome_completo" id="nome_completo" required>
+            </div>
+            <div>
+                <label for="email_usuario">E-mail:</label>
+                <input type="email" name="email_usuario" id="email_usuario" required>
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" required value="18">
+            </div>
+            <hr>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <select name="cidade" id="cidade">
+                    <option value="1">Balneário Camboriú</option>
+                    <option value="2">Itajaí</option>
+                    <option value="3">Itapema</option>
+                    <option value="4">Camboriú</option>
+                    <option value="5" selected>Blumenau</option>
+                    <option value="6">Gaspar</option>
+                    <option value="7">Rio do Sul</option>
+                    <option value="8">Nova Trento</option>
+                    <option value="9">Navegantes</option>
+                    <option value="10">Balneario Piçarras</option>
+                    <option value="11">Jaraguá do Sul</option>
+                    <option value="12">Florianópolis</option>
+                    <option value="13">Joinville</option>
+                    <option value="14">Chapecó</option>
+                    <option value="15">Criciúma</option>
+                    <option value="16">Morro da Fumaça</option>
+                    <option value="17">Barra Velha</option>
+                    <option value="18">Forquilhinha</option>
+                    <option value="19">Lages</option>
+                    <option value="20">Otacílio Costa</option>
+                    <option value="21">Fraiburgo</option>
+                    <option value="22">Xanxere</option>
+                    <option value="23">Itapoá Do Sul</option>
+                    <option value="24">Bombinhas</option>
+                    <option value="25">Santo Amaro Da Imperatriz</option>
+                    <option value="26">Guaraciaba</option>
+                    <option value="27">Saudades</option>
+                    <option value="28">São Bento Do Sul</option>
+                    <option value="29">Sombrio</option>
+                    <option value="30">Porto Belo</option>
+                    <option value="31">São José</option>
+                    <option value="32">Palhoça</option>
+                    <option value="33">Tamboá do Sul</option>
+                    <option value="34">Tijucas</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="10" maxlength="300"></textarea>
+            </div>
+            <div>
+                <label for="label_sexo">Sexo:</label>
+            <div>
+                <input type="radio" name="sexo" id="sexo_m" value="m" required>
+                <label for="sexo_m">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="sexo_f" value="f">
+                <label for="sexo_f">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="sexo_o">
+                <label for="sexo_o">Outro</label>
+            </div>
+            </div>
+            <div>
+                <button type="submit">Enviar dados</button>
+            </div>
+        </form>
+    </body>
+</html>
